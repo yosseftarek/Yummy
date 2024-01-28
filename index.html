@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo (1).png" type="image/x-icon">
+    <title>Yummy</title>
+</head>
+
+<body>
+    <div class="loading justify-content-center align-items-center"><span class="loader"></span></div>
+    <section class="sidebar d-flex">
+        <div class="sidebar-text d-flex flex-column justify-content-between p-4">
+            <ul class="list-unstyled overflow-hidden">
+                <li onclick="showSearch()" class="py-2 cursor-pointer text-white position-relative">Search</li>
+                <li onclick="getCategory()" class="py-2 cursor-pointer text-white position-relative">Categories</li>
+                <li onclick="getArea()" class="py-2 cursor-pointer text-white position-relative">Area</li>
+                <li onclick="getIngrediants()" class="py-2 cursor-pointer text-white position-relative">Ingredients</li>
+                <li onclick="showContactUs()" class="py-2 cursor-pointer text-white position-relative">Contact Us</li>
+            </ul>
+            <div class="navbar-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook text-white"></i>
+                    <i class="fa-brands fa-twitter text-white"></i>
+                    <i class="fa-solid fa-globe text-white"></i>
+                </div>
+                <p class="text-white">Copyright Â© 2019 All Rights <br>Reserved.</p>
+            </div>
+        </div>
+        <div class="sidebar-icon py-4 d-flex justify-content-between flex-column align-items-center">
+            <img src="images/logo (1).png" alt="" class="logo">
+            <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+            <div class="d-flex flex-column icon-2">
+                <i class="fa-solid fa-globe pb-2"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </section>
+    
+    <div id="search" class="container"></div>
+
+    <div class="container">
+        <div class="row g-4 py-5" id="data">
+            
+        </div>
+    </div>
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
